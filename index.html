@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CATLEVER | $CATLEVER on Solana</title>
+<meta name="description" content="One head. One body. Maximum leverage. $CATLEVER is balanced by nature, heavy on purpose.">
+
+<meta property="og:title" content="CATLEVER">
+<meta property="og:description" content="One head. One body. Maximum leverage.">
+<meta property="og:image" content="https://catlever.vercel.app/assets/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CATLEVER">
+<meta name="twitter:description" content="One head. One body. Maximum leverage.">
+<meta name="twitter:image" content="https://catlever.vercel.app/assets/og.png">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<script>
+window.addEventListener('error', function (e) {
+  var banner = document.createElement('div');
+  banner.textContent = 'SOMETHING BROKE: ' + (e.message || 'unknown error');
+  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#ff2d55;color:#fff;font:14px/1.4 monospace;padding:10px 14px;text-align:center;';
+  document.body.appendChild(banner);
+});
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="mini-logo" href="#top">
+      <img src="assets/avatar.png" alt="CATLEVER" width="36" height="36">
+      <span>CATLEVER</span>
+    </a>
+    <nav class="topbar-links">
+      <a class="pill-link" href="https://pump.fun/coin/SEESAWNOTATEETERpump" target="_blank" rel="noopener">pump.fun</a>
+      <a class="icon-link" href="https://x.com/catleversol" target="_blank" rel="noopener" aria-label="CATLEVER on X">
+        <svg viewBox="0 0 1200 1227" width="18" height="18" fill="currentColor" aria-hidden="true">
+          <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+        </svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="badge-burst">MEOW<br>TO THE<br>MOON</div>
+
+    <h1 class="wordmark"><span class="w-cat">CAT</span><wbr><span class="w-lever">LEVER</span></h1>
+
+    <p class="tagline">BALANCED BY NATURE.<br>HEAVY ON PURPOSE.</p>
+    <p class="subtext">ONE HEAD. ONE BODY. <span class="highlight">MAXIMUM LEVERAGE.</span></p>
+
+    <div class="cta-row">
+      <a class="buy-btn" href="https://pump.fun/coin/SEESAWNOTATEETERpump" target="_blank" rel="noopener">BUY $CATLEVER</a>
+      <button class="ca-chip" id="ca-chip" type="button" data-ca="SEESAWNOTATEETERpump">
+        <span class="ca-label">CA</span>
+        <span class="ca-value" id="ca-value">SEESAWNOTATEETERpump</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="seesaw-section">
+    <h2 class="section-title">TEST THE LEVERAGE</h2>
+    <div class="seesaw-frame">
+      <img id="seesaw-img" class="seesaw-img" src="assets/avatar.png" alt="Two cats balanced on a seesaw, one plain and one holding a gold coin">
+      <div class="ground-shadow"></div>
+    </div>
+
+    <div class="slider-wrap">
+      <input type="range" min="0" max="100" value="50" id="leverage-slider" class="leverage-slider" aria-label="Leverage">
+      <div class="slider-labels">
+        <span>UNDERWEIGHT</span>
+        <span>BALANCED</span>
+        <span>OVERLEVERAGED</span>
+      </div>
+    </div>
+
+    <p class="status-line" id="status-line" data-state="balanced">STATUS: BALANCED</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="features-row">
+    <div class="feature"><span class="feature-dot"></span>COMMUNITY DRIVEN</div>
+    <div class="feature"><span class="feature-dot"></span>NO TEAM ALLOCATION</div>
+    <div class="feature"><span class="feature-dot"></span>100% MEME</div>
+    <div class="feature"><span class="feature-dot"></span>PURE CAT ENERGY</div>
+  </div>
+  <div class="footer-bottom">
+    <span class="canary" id="canary" data-status="offline">SYSTEM: OFFLINE</span>
+    <span class="disclaimer">$CATLEVER is a meme coin with no intrinsic value or expectation of financial return. Not financial advice.</span>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
