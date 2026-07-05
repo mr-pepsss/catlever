@@ -14,4 +14,4 @@ No presale, no team allocation. Same bonding curve as everyone else on pump.fun.
 Site's up: [link]
 Drag the leverage slider yourself. Find out how much weight the seesaw can take before someone goes flying.
 
-CA: pinned once the curve opens.
+CA: n5crU8r3Z9qCFD2ZzEcPjuJQd3utYpEVorTKta2pump

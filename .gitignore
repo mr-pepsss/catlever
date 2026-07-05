@@ -4,3 +4,4 @@ config.local.js
 shots/
 /avatar.PNG
 /banner.PNG
+.env*
